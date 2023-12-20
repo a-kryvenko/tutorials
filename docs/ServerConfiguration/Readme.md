@@ -1,3 +1,5 @@
+# Server configuration for web applications
+
 General instruction for preparing server for hosting web applications.
 This instruction is applicable for mostly all kind of web applications, except really complex apps, which require a lot of DevOps configuration.  
 First of all, you need a VPS or VDS with installed Ubuntu, root user and ssh keys authorization configured.
