@@ -1,4 +1,4 @@
-# PHP configuration to work with Redis id Docker environment
+# PHP configuration to work with Redis in Docker environment
 
 This tutorial describe how to configure php to work with [PostgresSQL](https://www.postgresql.org/) database in Docker containers.
 

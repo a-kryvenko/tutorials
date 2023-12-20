@@ -1,4 +1,4 @@
-# Composer configuration id Docker environment
+# Composer configuration in Docker environment
 
 Installation and configuration of composer in docker is a bit tricky.
 This tutorial is answer to question "How to configure composer in docker?" and describe all steps of it.
