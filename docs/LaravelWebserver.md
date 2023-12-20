@@ -8,7 +8,7 @@ All this software will be included as a separate docker containers.
 
 We will use [laravel-webserver](https://github.com/a-kryvenko/laravel-10-webserver "laravel-webserver") for environment installation.
 
-1.  Prepare server using instruction: [configure server for web applications](https://github.com/a-kryvenko/tutorials/tree/master/docs/ServerConfiguration "Configure server for web applications")
+1.  Prepare server using instruction: [configure server for web applications](https://github.com/a-kryvenko/tutorials/tree/master/docs/ServerConfiguration.md "Configure server for web applications")
 2.  Connect to you server via SSH:
     ```shell
     ssh www@you_server_ip
