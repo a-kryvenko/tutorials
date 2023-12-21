@@ -73,7 +73,7 @@ Steps:
 
     after this commands you will need to reconnect to server (to apply new group docker for you current user);
 
-10.  Install docker-compose 
+10.  Install docker-compose
 
     ```shell
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
