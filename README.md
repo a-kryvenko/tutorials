@@ -9,6 +9,9 @@ Multiple tutorials
 
 [Modern images](https://github.com/a-kryvenko/tutorials/tree/master/docs/ModernWebImages.md "Modern WEB images")
 
+[Docker, Composer and PHP](https://github.com/a-kryvenko/tutorials/tree/master/docs/DockerComposerPHP.md "Docker, Composer and PHP")
+
 [Docker, Redis and PHP](https://github.com/a-kryvenko/tutorials/tree/master/docs/DockerRedisPHP.md "Docker, Redis and PHP")
 
-[Docker, Composer and PHP](https://github.com/a-kryvenko/tutorials/tree/master/docs/DockerComposerPHP.md "Docker, Composer and PHP")
+[Docker, PostgresSQL and PHP](https://github.com/a-kryvenko/tutorials/tree/master/docs/DockerPostgresPHP.md "Docker, PostgresSQL and PHP")
+
