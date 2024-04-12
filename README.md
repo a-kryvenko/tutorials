@@ -1,5 +1,5 @@
 # tutorials
-Multiple tutorials
+Some tutorials for web development
 
 [Server configuration for web application](https://github.com/a-kryvenko/tutorials/tree/master/docs/ServerConfiguration.md "Server Configuration")
 
