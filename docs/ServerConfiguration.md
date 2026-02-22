@@ -18,27 +18,59 @@ Steps:
     ```shell
     usermod -aG sudo www
     ```
-4.  Allow SSH access in UFW (Uncomplicated firewall)
+4. Disable password confirmation for sudo
+    ```shell
+    visudo
+    ```
+    and in the end of file add line
+    ```bash
+    www ALL=(ALL) NOPASSWD:ALL
+    ```
+5.  Allow SSH access in UFW (Uncomplicated firewall), and ports for http
     ```shell
     ufw allow OpenSSH
+    ufw allow 80/tcp
+    ufw allow 443/tcp
     ```
-5.  Enable UFW
+6.  Enable UFW
     ```shell
     ufw enable
     ```
-6.  Copy you auth key information to new user
+7. Install and configure fail2ban
+    ```shell
+    apt install fail2ban
+    cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+    nano /etc/fail2ban/jail.d/sshd.local
+    ```
+    and add next configuration
+    ```bash
+    [sshd]
+    enabled = true
+    port = ssh
+    filter = sshd
+    logpath = /var/log/auth.log
+    maxretry = 3
+    bantime = 1h
+    ```
+    and now enable fail2ban
+    ```shell
+    systemctl start fail2ban
+    systemctl enable fail2ban
+    fail2ban-client status
+    ```
+8.  Copy you auth key information to new user
     ```shell
     rsync --archive --chown=www:www ~/.ssh /home/www
     ```
-7.  Connect to server via you new user
+9.  Connect to server via you new user
     ```shell
     ssh www@your_server_ip
     ```
-8.  Update packages information
+10.  Update packages information
     ```shell
     sudo apt update
     ```
-9.  Install Docker
+11.  Install Docker
     ```shell
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
     ```
@@ -73,7 +105,7 @@ Steps:
 
     after this commands you will need to reconnect to server (to apply new group docker for you current user);
 
-10.  Install docker-compose
+12.  Install docker-compose
 
     ```shell
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
