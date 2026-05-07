@@ -15,3 +15,6 @@ Some tutorials for web development
 
 [Docker, PostgresSQL and PHP](https://github.com/a-kryvenko/tutorials/tree/master/docs/DockerPostgresPHP.md "Docker, PostgresSQL and PHP")
 
+Web App Server configuration [script](https://github.com/a-kryvenko/tutorials/tree/master/app-server-setup.sh). 22, 80, 443 ports only + docker installation.
+
+Database Server configuration [script](https://github.com/a-kryvenko/tutorials/tree/master/db-server-setup.sh) for Red Hat OS family. 22 port only and 3306 from Private Network. MySQL as example.
